@@ -1,0 +1,30 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "cropperjs": "^1.5.12"
+  },
+  "name": "editor-de-imagem",
+  "description": "Um pequeno editor de imagens",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lucas-PB1/editor-de-imagem.git"
+  },
+  "author": "Lucas Soares Lima",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lucas-PB1/editor-de-imagem/issues"
+  },
+  "homepage": "https://github.com/Lucas-PB1/editor-de-imagem#readme",
+  "keywords": [
+    "Editor",
+    "Processamento",
+    "Cropper",
+    "Web",
+    "Imagens"
+  ]
+}
