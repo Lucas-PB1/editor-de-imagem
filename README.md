@@ -2,7 +2,7 @@
 
 Este projeto tem os seguintes Objetivos:
 
-1 - Cortar imagens, Em andamento
+1 - Cortar imagens, OK
 2 - Redimensionar, Em andamento
 3 - Escrever em cima de imagens, Em andamento
 4 - Ajustar constraste/brilho etc, Em andamento
@@ -10,6 +10,7 @@ Este projeto tem os seguintes Objetivos:
 6 - Exibir informações sobre a imagem, Em andamento
 7 - Salvar imagens, Em andamento
 8 - Permitir o download de imagens, Em andamento
+9 - Rotacionar imagens, OK
 
 ## Funções completas:
 

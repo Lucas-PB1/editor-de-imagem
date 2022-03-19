@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Modulos  CSS-->
+    <link rel="stylesheet" href="node_modules/@popperjs/core/dist/cjs/popper.js">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/cropperjs/dist/cropper.min.css">
+    <link rel="stylesheet" href="css/imports/style.css">
+
+    <!-- Modulos JS-->
+    <script src="https://kit.fontawesome.com/b4f25fa05e.js" crossorigin="anonymous"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js" defer></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js" defer></script>
+    <script src="node_modules/cropperjs/dist/cropper.min.js" defer></script>
+    <script src="js/functions.js" defer></script>
+    <script src="js/script.js" defer></script>
+
+    <title>Editor de imagens</title>
+</head>
+
+<body>
+    <div id="main">
+        <div class="button-start">
+            <input type="file" id="loader-image">
+            <button type="button" class="btn btn_blue" id="start">
+                Selecionar uma imagem
+            </button>
+        </div>
+        <div class="modal fade" id="modalEditor" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Editor de imagem</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="img-container">
+                            <img alt="imagem-editavel" id="image">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="modal-footer-center">
+                            <!-- Editar Centralizado -->
+                            <button type="button" class="btn btn_orange edit" title="Rotacionar Imagem"
+                                id="rotate">Rotacionar <i class="fa-solid fa-rotate"></i></button>
+                            <button type="button" class="btn btn_orange edit" title='Cortar Imagem' id="cut">Cortar <i
+                                    class="fa-solid fa-scissors"></i></button>
+
+                            <!-- Menu Centralizado-->
+                            <button type="button" class="btn_red menu" id="edit" title="Editar Imagem"><i
+                                    class="fa-solid fa-pencil"></i>
+                                Editar
+                                Imagem</button>
+                            <button type="button" class="btn_orange menu" id="undo" title="Desfazer"><i
+                                    class="fa-solid fa-arrow-rotate-left"></i> Desfazer
+                            </button>
+
+                        </div>
+                        <div class="modal-footer-left">
+                            <!--Editar-->
+                            <button type="button" class="btn btn_red edit" title="Cancelar edições"><i
+                                    class="fa-solid fa-xmark"></i></button>
+                            <button type="button" class="btn btn_green edit" title="Salvar edições" id="salvar-edit"><i
+                                    class="fa-solid fa-check"></i></button>
+
+                            <!--Menu-->
+                            <button type="button" class="btn btn_red menu" data-bs-dismiss="modal"
+                                title="Fechar editor"><i class="fa-solid fa-xmark"></i></button>
+                            <button type="button" class="btn btn_green menu" title="Salvar Mudanças"><i
+                                    class="fa-solid fa-check"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,5 +1,7 @@
 ## Modulos
 node_modules
+package-lock.json
+css
 
 ## midias
 data/imagens
